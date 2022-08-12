@@ -504,7 +504,10 @@
           {
             "name": "State",
             "ids": [
-              "EVR:LAS:LHN:01:TRIG0:EVENTCTRL.SEVR"
+              "MEC:LAS:EVR:01:TRIG0:EVENTCTRL.SEVR",
+              "MEC:LAS:EVR:01:TRIG1:EVENTCTRL.SEVR",
+              "MEC:LAS:EVR:01:TRIG2:EVENTCTRL.SEVR",
+              "MEC:LAS:EVR:01:TRIG3:EVENTCTRL.SEVR"
             ],
             "comparisons": [
               {
@@ -517,7 +520,7 @@
                   "string": null,
                   "severity_on_failure": 2,
                   "if_disconnected": 2,
-                  "value": false,
+                  "value": 1.0,
                   "rtol": null,
                   "atol": null
                 }
