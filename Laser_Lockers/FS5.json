@@ -498,13 +498,16 @@
     {
       "PVConfiguration": {
         "name": "SLAC Event Receiver",
-        "description": "check state of front panel trigger 0 state",
+        "description": "check state of front panel trigger states",
         "tags": null,
         "checklist": [
           {
             "name": "State",
             "ids": [
-              "EVR:LAS:LHN:01:TRIG0:EVENTCTRL.SEVR"
+              "EVR:LAS:CXI:01:TRIG0:EVENTCTRL.SEVR",
+              "EVR:LAS:CXI:01:TRIG1:EVENTCTRL.SEVR",
+              "EVR:LAS:CXI:01:TRIG2:EVENTCTRL.SEVR",
+              "EVR:LAS:CXI:01:TRIG3:EVENTCTRL.SEVR"
             ],
             "comparisons": [
               {
