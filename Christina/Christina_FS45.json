@@ -1,898 +1,390 @@
 {
-  "configs": [
-    {
-      "PVConfiguration": {
-        "name": "FS45 laser check part 1",
-        "description": "passive laser check for FS45",
-        "tags": null,
-        "checklist": [
-          {
-            "name": "Freq Set Point",
-            "ids": [
-              "LAS:FS45:VIT:FREQ_SP"
-            ],
-            "comparisons": [
+  "version": 0,
+  "root": {
+    "configs": [
+      {
+        "PVConfiguration": {
+          "name": "FS45 laser check part 1",
+          "description": "passive laser check for FS45",
+          "by_pv": {
+            "LAS:FS45:VIT:FREQ_SP": [
               {
                 "Equals": {
                   "name": "68 MHz",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 68000000.0,
-                  "rtol": null,
-                  "atol": null
+                  "value": 68000000.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Freq Diff Tolerence",
-            "ids": [
-              "LAS:FS45:VIT:FREQ_TOLERANCE"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FREQ_TOLERANCE": [
               {
                 "Equals": {
                   "name": "2 Hz",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 2.0,
-                  "rtol": null,
-                  "atol": null
+                  "value": 2.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Max Search Diff",
-            "ids": [
-              "LAS:FS45:VIT:FREQ_ERR_TOLERANCE"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FREQ_ERR_TOLERANCE": [
               {
                 "Equals": {
                   "name": "=200 Hz",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 200.0,
-                  "rtol": null,
-                  "atol": null
+                  "value": 200.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Error Corr Factor",
-            "ids": [
-              "LAS:FS45:VIT:FREQ_ERR_CORRECTION"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FREQ_ERR_CORRECTION": [
               {
                 "Equals": {
                   "name": "30816 mm/sec",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 30816.0,
-                  "rtol": null,
-                  "atol": null
+                  "value": 30816.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Max Correction",
-            "ids": [
-              "LAS:FS45:VIT:FREQ_ERR_LAST_N_STD.HIHI"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FREQ_ERR_LAST_N_STD.HIHI": [
               {
                 "Equals": {
                   "name": "=500 Hz",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 500.0,
-                  "rtol": null,
-                  "atol": null
+                  "value": 500.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Diff Smoothing",
-            "ids": [
-              "LAS:FS45:VIT:FREQ_ERR_SMOOTH"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FREQ_ERR_SMOOTH": [
               {
                 "Equals": {
                   "name": "=0.5",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 0.5,
-                  "rtol": null,
-                  "atol": null
+                  "value": 0.5
                 }
               }
-            ]
-          },
-          {
-            "name": "Max Retry",
-            "ids": [
-              "LAS:FS45:VIT:FREQ_RETRY_COUNTER.HIHI"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FREQ_RETRY_COUNTER.HIHI": [
               {
                 "Equals": {
                   "name": "=10",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 10.0,
-                  "rtol": null,
-                  "atol": null
+                  "value": 10.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Freq Search Vel",
-            "ids": [
-              "LAS:FS45:VIT:FREQ_SEARCH_VEL"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FREQ_SEARCH_VEL": [
               {
                 "Equals": {
                   "name": "=0.08 mm/sec",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 0.08,
-                  "rtol": null,
-                  "atol": null
+                  "value": 0.08
                 }
               }
-            ]
-          },
-          {
-            "name": "Frequency Search Status",
-            "ids": [
-              "LAS:FS45:VIT:FREQ_SEARCH_STATE"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FREQ_SEARCH_STATE": [
               {
                 "Equals": {
                   "name": "is found?",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 2.0,
-                  "rtol": null,
-                  "atol": null
+                  "value": 2.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Meas - Target",
-            "ids": [
-              "LAS:FS45:VIT:FREQ_ERR"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FREQ_ERR": [
               {
                 "Range": {
                   "name": "frequency error range",
                   "description": "",
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
                   "low": -5.0,
                   "high": 5.0,
                   "warn_low": -2.0,
-                  "warn_high": 2.0,
-                  "inclusive": true
+                  "warn_high": 2.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Retry Counter Attempt",
-            "ids": [
-              "LAS:FS45:VIT:FREQ_RETRY_COUNTER"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FREQ_RETRY_COUNTER": [
               {
                 "LessOrEqual": {
                   "name": "<=10",
                   "description": "",
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
                   "value": 10.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Motor Status",
-            "ids": [
-              "LAS:FS45:MMN:FQ:STATUS"
             ],
-            "comparisons": [
+            "LAS:FS45:MMN:FQ:STATUS": [
               {
                 "Equals": {
                   "name": "is stopped?",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 8.0,
-                  "rtol": null,
-                  "atol": null
+                  "value": 8.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Automatic Operation",
-            "ids": [
-              "LAS:FS45:VIT:AUTO_MODE_ENABLE"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:AUTO_MODE_ENABLE": [
               {
                 "Equals": {
                   "name": "Auto on/off",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": true,
-                  "rtol": null,
-                  "atol": null
+                  "value": true
                 }
               }
-            ]
-          },
-          {
-            "name": "FS Python Script Status",
-            "ids": [
-              "LAS:FS45:VIT:FS_WATCHDOG_HB_ERR"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FS_WATCHDOG_HB_ERR": [
               {
                 "Equals": {
-                  "name": "is running?",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": false,
-                  "rtol": null,
-                  "atol": null
+                  "name": "is running?"
                 }
               }
-            ]
-          },
-          {
-            "name": "Enable Time Ctrl",
-            "ids": [
-              "LAS:FS45:VIT:FS_ENABLE_TIME_CTRL"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FS_ENABLE_TIME_CTRL": [
               {
                 "Equals": {
                   "name": "enabled/disabled",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": true,
-                  "rtol": null,
-                  "atol": null
+                  "value": true
                 }
               }
             ]
           }
-        ]
-      }
-    },
-    {
-      "PVConfiguration": {
-        "name": "FS45 laser check part 2",
-        "description": "passive laser check for FS45",
-        "tags": null,
-        "checklist": [
-          {
-            "name": "Time Error - Raw",
-            "ids": [
-              "LAS:FS45:VIT:CH1_CALC_PHASE"
-            ],
-            "comparisons": [
+        }
+      },
+      {
+        "PVConfiguration": {
+          "name": "FS45 laser check part 2",
+          "description": "passive laser check for FS45",
+          "by_pv": {
+            "LAS:FS45:VIT:CH1_CALC_PHASE": [
               {
                 "Range": {
                   "name": "Raw Tolerance",
                   "description": "",
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
                   "low": -500.0,
                   "high": 500.0,
                   "warn_low": -100.0,
-                  "warn_high": 100.0,
-                  "inclusive": true
+                  "warn_high": 100.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Time Error - STD Value",
-            "ids": [
-              "LAS:FS45:VIT:CH1_CALC_PHASE_LAST_60_STD"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:CH1_CALC_PHASE_LAST_60_STD": [
               {
                 "Range": {
                   "name": "STD Tolerance",
                   "description": "",
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "low": 0,
                   "high": 500.0,
                   "warn_low": 1e-05,
-                  "warn_high": 300.0,
-                  "inclusive": true
+                  "warn_high": 300.0
                 }
               }
-            ]
-          },
-          {
-            "name": "RF Power",
-            "ids": [
-              "LAS:FS45:VIT:CH1_RF_PWR"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:CH1_RF_PWR": [
               {
                 "Range": {
                   "name": "RF Power ",
                   "description": "",
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
                   "low": 1.5,
                   "high": 4.9,
                   "warn_low": 2.0,
-                  "warn_high": 4.0,
-                  "inclusive": true
+                  "warn_high": 4.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Diode Power",
-            "ids": [
-              "LAS:FS45:VIT:CH1_DIODE_PWR"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:CH1_DIODE_PWR": [
               {
                 "Range": {
                   "name": "Diode Power Tolerance",
                   "description": "",
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
                   "low": 1.5,
                   "high": 4.5,
                   "warn_low": 1.7,
-                  "warn_high": 4.4,
-                  "inclusive": true
+                  "warn_high": 4.4
                 }
               }
-            ]
-          },
-          {
-            "name": "Piezo Amp Monitor",
-            "ids": [
-              "LAS:FS45:VIT:PIEZO_AMP_MON"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:PIEZO_AMP_MON": [
               {
                 "Range": {
                   "name": "Tolerance",
                   "description": "",
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
                   "low": 1.0,
                   "high": 3.5,
                   "warn_low": 1.7,
-                  "warn_high": 2.3,
-                  "inclusive": true
+                  "warn_high": 2.3
                 }
               }
-            ]
-          },
-          {
-            "name": "Laser Signal Level OK",
-            "ids": [
-              "LAS:FS45:VIT:FS_LASER_OK"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FS_LASER_OK": [
               {
                 "Equals": {
                   "name": "OK?",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": true,
-                  "rtol": null,
-                  "atol": null
+                  "value": true
                 }
               }
-            ]
-          },
-          {
-            "name": "Auto Bucket Corr.",
-            "ids": [
-              "LAS:FS45:VIT:FS_ENABLE_BUCKET_FIX"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FS_ENABLE_BUCKET_FIX": [
               {
                 "Equals": {
                   "name": "Enable/Disable",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": true,
-                  "rtol": null,
-                  "atol": null
+                  "value": true
                 }
               }
-            ]
-          },
-          {
-            "name": "last calibration error ns",
-            "ids": [
-              "LAS:FS45:VIT:FS_CALIB_ERROR"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:FS_CALIB_ERROR": [
               {
                 "Less": {
                   "name": "<5E-2",
                   "description": "",
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
                   "value": 0.05
                 }
               }
-            ]
-          },
-          {
-            "name": "RF Lock Enable",
-            "ids": [
-              "LAS:FS45:VIT:RF_LOCK_ENABLE"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:RF_LOCK_ENABLE": [
               {
                 "Equals": {
                   "name": "enable/disable",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": true,
-                  "rtol": null,
-                  "atol": null
+                  "value": true
                 }
               }
-            ]
-          },
-          {
-            "name": "Laser Phase Lock Status",
-            "ids": [
-              "LAS:FS45:VIT:PHASE_LOCKED"
             ],
-            "comparisons": [
+            "LAS:FS45:VIT:PHASE_LOCKED": [
               {
                 "Equals": {
                   "name": "Locked/Unlocked",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": true,
-                  "rtol": null,
-                  "atol": null
+                  "value": true
                 }
               }
-            ]
-          },
-          {
-            "name": "LAS:FS45:MMS:PH - Minus",
-            "ids": [
-              "LAS:FS45:MMS:PH.LLS"
             ],
-            "comparisons": [
+            "LAS:FS45:MMS:PH.LLS": [
               {
                 "Equals": {
-                  "name": "Minus Status",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": false,
-                  "rtol": null,
-                  "atol": null
+                  "name": "Minus Status"
                 }
               }
-            ]
-          },
-          {
-            "name": "LAS:FS45:MMS:PH - Plus",
-            "ids": [
-              "LAS:FS45:MMS:PH.HLS"
             ],
-            "comparisons": [
+            "LAS:FS45:MMS:PH.HLS": [
               {
                 "Equals": {
-                  "name": "Plus Status",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": false,
-                  "rtol": null,
-                  "atol": null
+                  "name": "Plus Status"
                 }
               }
-            ]
-          },
-          {
-            "name": "LAS:FS45:MMS:PH - status",
-            "ids": [
-              "LAS:FS45:MMS:PH:STATUS"
             ],
-            "comparisons": [
+            "LAS:FS45:MMS:PH:STATUS": [
               {
                 "Equals": {
                   "name": "status",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 8.0,
-                  "rtol": null,
-                  "atol": null
+                  "value": 8.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Meas. Jitter",
-            "ids": [
-              "LAS:FS45:CNT:TI:GetMeasJitter"
             ],
-            "comparisons": [
+            "LAS:FS45:CNT:TI:GetMeasJitter": [
               {
                 "Range": {
                   "name": "Meas. Jitter Tolerance",
                   "description": "",
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
                   "low": -1.0,
-                  "high": 3e-10,
-                  "warn_low": null,
-                  "warn_high": null,
-                  "inclusive": true
+                  "high": 3e-10
                 }
               }
             ]
           }
-        ]
-      }
-    },
-    {
-      "PVConfiguration": {
-        "name": "FS45 laser check part 3",
-        "description": "passive laser check for FS45",
-        "tags": null,
-        "checklist": [
-          {
-            "name": "Coupling",
-            "ids": [
-              "LAS:FS45:CNT:TI:A:GetInputCoupl",
-              "LAS:FS45:CNT:TI:B:GetInputCoupl"
-            ],
-            "comparisons": [
+        }
+      },
+      {
+        "PVConfiguration": {
+          "name": "FS45 laser check part 3",
+          "description": "passive laser check for FS45",
+          "by_pv": {
+            "LAS:FS45:CNT:TI:A:GetInputCoupl": [
               {
                 "Equals": {
-                  "name": "AC/DC",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": false,
-                  "rtol": null,
-                  "atol": null
+                  "name": "AC/DC"
                 }
               }
-            ]
-          },
-          {
-            "name": "Trigger Mode",
-            "ids": [
-              "LAS:FS45:CNT:TI:A:GetTrigMode",
-              "LAS:FS45:CNT:TI:B:GetTrigMode"
             ],
-            "comparisons": [
+            "LAS:FS45:CNT:TI:B:GetInputCoupl": [
               {
                 "Equals": {
-                  "name": "Trigger Mode",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": false,
-                  "rtol": null,
-                  "atol": null
+                  "name": "AC/DC"
                 }
               }
-            ]
-          },
-          {
-            "name": "Threshold",
-            "ids": [
-              "LAS:FS45:CNT:TI:A:GetTrigThreshold",
-              "LAS:FS45:CNT:TI:B:GetTrigThreshold"
             ],
-            "comparisons": [
+            "LAS:FS45:CNT:TI:A:GetTrigMode": [
+              {
+                "Equals": {
+                  "name": "Trigger Mode"
+                }
+              }
+            ],
+            "LAS:FS45:CNT:TI:B:GetTrigMode": [
+              {
+                "Equals": {
+                  "name": "Trigger Mode"
+                }
+              }
+            ],
+            "LAS:FS45:CNT:TI:A:GetTrigThreshold": [
               {
                 "Equals": {
                   "name": "-0.2 V",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": -0.2,
-                  "rtol": null,
-                  "atol": null
+                  "value": -0.2
                 }
               }
-            ]
-          },
-          {
-            "name": "EXT Threshold",
-            "ids": [
-              "LAS:FS45:CNT:TI:EXT:GetTrigThreshold"
             ],
-            "comparisons": [
+            "LAS:FS45:CNT:TI:B:GetTrigThreshold": [
+              {
+                "Equals": {
+                  "name": "-0.2 V",
+                  "value": -0.2
+                }
+              }
+            ],
+            "LAS:FS45:CNT:TI:EXT:GetTrigThreshold": [
               {
                 "Equals": {
                   "name": "1.7 V",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 1.7,
-                  "rtol": null,
-                  "atol": null
+                  "value": 1.7
                 }
               }
-            ]
-          },
-          {
-            "name": "Slope",
-            "ids": [
-              "LAS:FS45:CNT:TI:A:GetTrigSlope",
-              "LAS:FS45:CNT:TI:B:GetTrigSlope",
-              "LAS:FS45:CNT:TI:EXT:GetTrigSlope"
             ],
-            "comparisons": [
+            "LAS:FS45:CNT:TI:A:GetTrigSlope": [
               {
                 "Equals": {
-                  "name": "positive/negative",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": false,
-                  "rtol": null,
-                  "atol": null
+                  "name": "positive/negative"
                 }
               }
-            ]
-          },
-          {
-            "name": "Input Termination A/B",
-            "ids": [
-              "LAS:FS45:CNT:TI:A:GetInputTerm",
-              "LAS:FS45:CNT:TI:B:GetInputTerm"
             ],
-            "comparisons": [
+            "LAS:FS45:CNT:TI:B:GetTrigSlope": [
               {
                 "Equals": {
-                  "name": "50 Ohm",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": false,
-                  "rtol": null,
-                  "atol": null
+                  "name": "positive/negative"
                 }
               }
-            ]
-          },
-          {
-            "name": "Input Termination EXT",
-            "ids": [
-              "LAS:FS45:CNT:TI:EXT:GetInputTerm"
             ],
-            "comparisons": [
+            "LAS:FS45:CNT:TI:EXT:GetTrigSlope": [
+              {
+                "Equals": {
+                  "name": "positive/negative"
+                }
+              }
+            ],
+            "LAS:FS45:CNT:TI:A:GetInputTerm": [
+              {
+                "Equals": {
+                  "name": "50 Ohm"
+                }
+              }
+            ],
+            "LAS:FS45:CNT:TI:B:GetInputTerm": [
+              {
+                "Equals": {
+                  "name": "50 Ohm"
+                }
+              }
+            ],
+            "LAS:FS45:CNT:TI:EXT:GetInputTerm": [
               {
                 "Equals": {
                   "name": "1 MOhm",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": 1.0,
-                  "rtol": null,
-                  "atol": null
+                  "value": 1.0
                 }
               }
-            ]
-          },
-          {
-            "name": "Front Panel Ref Out",
-            "ids": [
-              "LAS:FS45:CNT:TI:GetRefLvlAmp"
             ],
-            "comparisons": [
+            "LAS:FS45:CNT:TI:GetRefLvlAmp": [
               {
                 "Equals": {
                   "name": "TTL",
-                  "description": null,
-                  "invert": false,
-                  "reduce_period": null,
-                  "reduce_method": "average",
-                  "string": null,
-                  "severity_on_failure": 2,
-                  "if_disconnected": 2,
-                  "value": true,
-                  "rtol": null,
-                  "atol": null
+                  "value": true
                 }
               }
             ]
           }
-        ]
+        }
       }
-    }
-  ]
+    ]
+  }
 }
