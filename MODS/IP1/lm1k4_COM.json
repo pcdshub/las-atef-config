@@ -1,162 +1,61 @@
 {
-  "configs": [
-    {
-      "DeviceConfiguration": {
-        "name": "cameras",
-        "description": "lm1k4 com dp1 tf1 ff1",
-        "tags": null,
-        "checklist": [
-          {
-            "name": "centroid_x",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "centroid_y",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "centroid_threshold",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "centroid_enabled",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "image_counter",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "ping",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "stats_enable",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "image size?",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "binning?",
-            "ids": [],
-            "comparisons": []
-          }
-        ],
-        "devices": [
-          "lm1k4_com_dp1_tf1_ff1"
-        ]
+  "version": 0,
+  "root": {
+    "configs": [
+      {
+        "DeviceConfiguration": {
+          "name": "cameras",
+          "description": "lm1k4 com dp1 tf1 ff1",
+          "devices": [
+            "lm1k4_com_dp1_tf1_ff1"
+          ]
+        }
+      },
+      {
+        "DeviceConfiguration": {
+          "name": "cameras",
+          "description": "lm1k4 com dp1 tf1 nf1",
+          "devices": [
+            "lm1k4_com_dp1_tf1_nf1"
+          ]
+        }
+      },
+      {
+        "DeviceConfiguration": {
+          "name": "cameras",
+          "description": "lm1k4 com dp2 tf1 ff1",
+          "devices": [
+            "lm1k4_com_dp2_tf1_ff1"
+          ]
+        }
+      },
+      {
+        "DeviceConfiguration": {
+          "name": "cameras",
+          "description": "lm1k4 com dp2 tf1 nf1",
+          "devices": [
+            "lm1k4_com_dp2_tf1_nf1"
+          ]
+        }
+      },
+      {
+        "DeviceConfiguration": {
+          "name": "cameras",
+          "description": "lm1k4 com dp3 tf1 ff1",
+          "devices": [
+            "lm1k4_com_dp3_tf1_ff1"
+          ]
+        }
+      },
+      {
+        "DeviceConfiguration": {
+          "name": "cameras",
+          "description": "lm1k4 com dp3 tf1 nf1",
+          "devices": [
+            "lm1k4_com_dp3_tf1_nf1"
+          ]
+        }
       }
-    },
-    {
-      "DeviceConfiguration": {
-        "name": "cameras",
-        "description": "lm1k4 com dp1 tf1 nf1",
-        "tags": null,
-        "checklist": [
-          {
-            "name": "cantroid_x",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "centroid_y",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "centroid_threshold",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "centroid_enable",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "image_counter",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "ping",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "stats_enable",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "binning?",
-            "ids": [],
-            "comparisons": []
-          },
-          {
-            "name": "image size?",
-            "ids": [],
-            "comparisons": []
-          }
-        ],
-        "devices": [
-          "lm1k4_com_dp1_tf1_nf1"
-        ]
-      }
-    },
-    {
-      "DeviceConfiguration": {
-        "name": "cameras",
-        "description": "lm1k4 com dp2 tf1 ff1",
-        "tags": null,
-        "checklist": [],
-        "devices": [
-          "lm1k4_com_dp2_tf1_ff1"
-        ]
-      }
-    },
-    {
-      "DeviceConfiguration": {
-        "name": "cameras",
-        "description": "lm1k4 com dp2 tf1 nf1",
-        "tags": null,
-        "checklist": [],
-        "devices": [
-          "lm1k4_com_dp2_tf1_nf1"
-        ]
-      }
-    },
-    {
-      "DeviceConfiguration": {
-        "name": "cameras",
-        "description": "lm1k4 com dp3 tf1 ff1",
-        "tags": null,
-        "checklist": [],
-        "devices": [
-          "lm1k4_com_dp3_tf1_ff1"
-        ]
-      }
-    },
-    {
-      "DeviceConfiguration": {
-        "name": "cameras",
-        "description": "lm1k4 com dp3 tf1 nf1",
-        "tags": null,
-        "checklist": [],
-        "devices": [
-          "lm1k4_com_dp3_tf1_nf1"
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }
